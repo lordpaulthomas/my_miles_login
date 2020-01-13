@@ -6,13 +6,11 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import reduxThunk from 'redux-thunk';
 
 import App from './components/App';
-import Saved from './containers/Saved';
 import SignUp from './containers/auth/SignUp/SignUp';
 import SignIn from './containers/auth/SignIn';
 import SignOut from './containers/auth/SignOut';
-import Results from './containers/Results';
+
 import LandingPage from './containers/LandingPage';
-import SongDetail from './components/SongDetail';
 import ProfileHome from './containers/ProfileHome';
 
 
@@ -35,9 +33,6 @@ ReactDOM.render(
                     <Route exact path='/signup' component={SignUp} />
                     <Route exact path='/signin' component={SignIn} />
                     <Route exact path='/signout' component={SignOut}/>           
-                    <Route exact path='/saved' component={Saved} />   
-                    <Route exact path='/results' component={Results}/>
-                    <Route exact path='/results/:id/:artist/:trackName' component={SongDetail}/>
                     <Route exact path='/profile' component={ProfileHome}/>
                     <Route component={LandingPage} />
                 </Switch>

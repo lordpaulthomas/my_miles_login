@@ -6,7 +6,7 @@ const cors      = require('cors');
 const app = express();
 
 // Database setup
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/thatSong";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/loginFramework";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useCreateIndex: true});;
 

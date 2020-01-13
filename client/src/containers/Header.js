@@ -27,7 +27,7 @@ class Header extends Component {
 	render() {
 		return (
 			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-				<Link className="navbar-brand logoFont" to="/"><span className='logoColor1'>that</span><span className='logoColor2'>song</span></Link>
+				<Link className="navbar-brand logoFont" to="/"><span className='logoColor1'>Log</span><span className='logoColor2'>In</span></Link>
           {this.renderLinks()}
 			</nav>
 		)

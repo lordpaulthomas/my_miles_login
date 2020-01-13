@@ -13,19 +13,7 @@ const UserSchema = new Schema({
     password: {
         type: String,
         required: true
-    },
-    favoriteSongs: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'FavoriteSong'
-        }
-    ],
-    searchHistory: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'SearchHistory'
-        }
-    ]
+    }
 });
 
 UserSchema.pre('save', async function(next) {
